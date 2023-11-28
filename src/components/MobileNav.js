@@ -1,21 +1,29 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/Logo.svg'
-import { AiOutlineCloseCircle } from "react-icons/ai";
+// import { AiOutlineCloseCircle } from "react-icons/ai";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { LiaWindowCloseSolid } from "react-icons/lia";
 
-const MobileNav = ({ isOpen, onClose }) => {
+const MobileNav = () => {
     const location = useLocation();
     const [activeLi, setActiveLi] = useState('Home');
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         setActiveLi('Home');
     }, [location.pathname]);
 
     const handleClick = (clickedLink) => {
-        console.log(`Clicked on: ${clickedLink}`);
+        // console.log(`Clicked on: ${clickedLink}`);
         setActiveLi(clickedLink);
-        onclose();
+        setIsMenuOpen(false);
     };
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+        console.log('open');
+    }
 
     let links = [
         {name: 'Home', link: '/'},
@@ -26,14 +34,21 @@ const MobileNav = ({ isOpen, onClose }) => {
         {name: 'FAQs', link: '#'},
     ]
   return (
-    <div className={`SIDEBAR absolute w-[50%] h-full bg-white hidden top-0 right-0 z-50 py-10 px-2 gap-9 transition-transform ${isOpen ? 'transform translate-x-0' : 'transform translate-x-full'}`}>
+    <div className={`h-full fixed bg-white lg:hidden w-[70%] md:w-[50%] top-0 right-0 z-50 py-10 px-5 gap-5 flex-col flex items-start justify-between drop-shadow-2xl shadow-2xl transition-all duration-500 ${isMenuOpen ? 'w-0' : 'w-[-50%]'}`}>
         <div className='w-16 h-6 cursor-pointer flex ml-4'>
             <Link to='/' className='w-full h-full cursor-pointer'>
                 <img src={logo} alt="Golio" className='w-full h-full' />
             </Link>
         </div>
 
-        <AiOutlineCloseCircle size={24} className='absolute top-4 right-4 ' onClick={onclose} />
+        <div className='absolute right-8 top-6 cursor-pointer lg:hidden' onClick={toggleMenu}>
+                {isMenuOpen 
+                    ?
+                    (<LiaWindowCloseSolid  size={30} className='text-white' />)
+                    :
+                    (<HiMenuAlt3 size={30} className='text-white' />)
+                }
+        </div>
 
 
         <ul className='flex h-14 flex-col items-start justify-between py-8 px-2 list-none gap-4 text-sm'>
@@ -43,6 +58,8 @@ const MobileNav = ({ isOpen, onClose }) => {
                 </li>
             ))}
         </ul>
+
+        <button type="submit" className='bg-[#0B63E5] text-white tracking-wider hover:bg-neutral-800/90 text-sm font-normal py-1 px-1 lg:font-medium'>Contact Us</button>
     </div>
   )
 }
