@@ -5,6 +5,6 @@
 
 @layer base {
     button {
-        @apply  py-2 px-3 rounded-md;
+        @apply  py-2 px-3 rounded-md cursor-pointer;
     }
 }

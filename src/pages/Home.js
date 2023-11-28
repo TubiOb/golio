@@ -5,8 +5,8 @@ import Navigation from '../components/Navigation'
 const Home = () => {
   return (
     <div className='bg-white w-full h-full'>
-        <Hero />
         <Navigation />
+        <Hero />
     </div>
   )
 }
