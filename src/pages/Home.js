@@ -5,6 +5,7 @@ import Main from '../components/Main'
 import MobileNav from '../components/MobileNav'
 import Operate from '../components/Operate'
 import Team from '../components/Team'
+import Testimonials from '../components/Testimonials'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Main />
         <Operate />
         <Team />
+        <Testimonials />
     </div>
   )
 }

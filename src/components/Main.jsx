@@ -6,7 +6,7 @@ import cpu2 from '../assets/Cpu2.svg'
 
 const Main = () => {
   return (
-    <div className='w-full bg-blue-50 flex h-auto p-[5%] lg:p-[10%]'>
+    <div className='w-full flex h-auto p-[5%] lg:p-[10%]'>
         <div className='flex md:flex-row flex-col justify-between bg-white py-20 px-2 gap-3'>
             <div className='w-full lg:w-[50%] h-auto lg:h-[70%] flex flex-col lg:items-start items-center gap-2'>
                 <div className='flex text-left flex-col gap-2'>

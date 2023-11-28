@@ -56,10 +56,10 @@ const Team = () => {
         </div>
 
         <div className='flex items-center m-auto justify-center flex-row gap-8 mt-8'>
-            <div className='rounded-full flex items-center justify-center bg-blue-100 p-1'>
+            <div className='rounded-full flex items-center justify-center bg-blue-100 p-1 cursor-pointer hover:bg-blue-200'>
                 <HiOutlineArrowSmLeft size={24} className='text-blue-400' />
             </div>
-            <div className='rounded-full flex items-center justify-center bg-blue-100 p-1'>
+            <div className='rounded-full flex items-center justify-center bg-blue-100 p-1 cursor-pointer hover:bg-blue-200'>
                 <HiOutlineArrowSmRight size={24} className='text-blue-400' />
             </div>
         </div>
