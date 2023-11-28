@@ -34,6 +34,7 @@ const Navigation = () => {
     ]
 
   return (
+    <div className='flex relative'>
         <div className='bg-white cursor-pointer z-50 rounded-md w-[90%] h-12 mt-5 m-auto py-1 px-5 gap-1 hidden lg:flex flex-row justify-between items-center drop-shadow-2xl shadow-2xl'>
             <div className='w-18 h-6 cursor-pointer flex'>
                 <Link to='/' className='w-full h-full cursor-pointer'>
@@ -51,12 +52,18 @@ const Navigation = () => {
 
             <button type="submit" className='bg-[#0B63E5] text-white tracking-wider hover:bg-neutral-800/90 text-sm font-normal py-1 px-1 lg:font-medium'>Contact Us</button>
 
-            <CgMenuRound size={28} className='absolute lg:hidden top-9 right-5 text-white' onClick={handleMenuClick} />
+            
 
 
             <MobileNav isOpen={isMobileNavOpen} onClose={() => setMobileNavOpen(false)} />
 
         </div>
+        
+        <CgMenuRound size={28} className='absolute lg:hidden top-9 right-5 text-white' onClick={handleMenuClick} />
+    </div>
+        
+
+        
         
     
   )
