@@ -58,7 +58,7 @@ const Navigation = () => {
         </div>
 
 
-        <div className='absolute right-8 z-50 top-12 cursor-pointer lg:hidden' onClick={toggleMenu}>
+        <div className='absolute right-6 z-50 top-12 cursor-pointer lg:hidden' onClick={toggleMenu}>
                 {isMenuOpen 
                     ?
                     (<LiaWindowCloseSolid  size={30} className='text-black z-50' />)
