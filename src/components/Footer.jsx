@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className='bg-[#031939] py=5 px-7 md:w-full lg:w-[50%] w-full items-center lg:items-start justify-between flex flex-col'>
+        <div className='bg-[#031939] py=5 px-7 md:w-full lg:w-[50%] w-full h-full items-center lg:items-start justify-between flex flex-col'>
             <div className='flex flex-row w-[95%] md:w-[85%] lg:w-[50%] items-center lg:items-start gap-4 lg:gap-3 justify-between lg:ml-14 lg:my-3 py-9 px-2'>
                 <div className='w-16 h-6 cursor-pointer flex flex-row'>
                     <Link to='/' className='w-full h-full cursor-pointer text-white gap-3 flex flex-row items-center justify-between'>
@@ -28,16 +28,16 @@ const Footer = () => {
                 </div>
 
                 <div className='flex flex-row items-center justify-between gap-1.5 lg:gap-2'>
-                    <div className='flex items-center bg-sky-100/10 text-white p-1 rounded-md'>
+                    <div className='flex items-center bg-sky-100/10 text-white p-1 rounded-md cursor-pointer hover:bg-sky-700/70'>
                         <RiFacebookFill className='fill-white text-white' size={20} />
                     </div>
-                     <div className='flex items-center bg-sky-100/10 text-white p-1 rounded-md'>
+                     <div className='flex items-center bg-sky-100/10 text-white p-1 rounded-md cursor-pointer hover:bg-sky-700/70'>
                         <RiTwitterFill className='fill-white text-white' size={20} />
                     </div>
-                     <div className='flex items-center bg-sky-100/10 text-white p-1 rounded-md'>
+                     <div className='flex items-center bg-sky-100/10 text-white p-1 rounded-md cursor-pointer hover:bg-sky-700/70'>
                         <RiLinkedinFill className='fill-white text-white' size={20} />
                     </div>
-                     <div className='flex items-center bg-sky-100/10 text-white p-1 rounded-md'>
+                     <div className='flex items-center bg-sky-100/10 text-white p-1 rounded-md cursor-pointer hover:bg-sky-700/70'>
                         <RiInstagramFill className='fill-white text-white' size={20} />
                     </div>
                 </div>
