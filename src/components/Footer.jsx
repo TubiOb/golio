@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col border-y-2 border-opacity-10 border-white lg:flex-row w-[95%] md:w[85%] lg:w-[70%] items-start gap-4 lg:gap-3 justify-between lg:ml-14 lg:my-3 py-9 px-2'>
+            <div className='flex flex-col border-y-2 border-opacity-10 border-white lg:flex-row w-[95%] md:w-[85%] lg:w-[75%] items-start gap-4 lg:gap-3 justify-between lg:ml-14 lg:my-3 py-9 px-2'>
                 <div className='flex items-start'>
                     <ul className='flex-col items-start justify-between text-white p-3 text-base font-semibold uppercase leading-9'>quick links
                         <li className='capitalize text-neutral-200 font-medium text-sm cursor-pointer hover:text-neutral-200 hover:font-normal'>- portfolio</li>
