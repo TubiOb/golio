@@ -73,7 +73,7 @@ const PageTwoHero = () => {
                         <div className='flex flex-col items-center w-auto justify-between'>
                             <fieldset className='border-none outline-none w-auto flex gap-2'>
                                 {/* <legend className='text-neutral-800 font-bold text-sm ml-1 border-none outline-none'>Closest Location</legend> */}
-                                <Menu as="div" className="relative inline-block w-48 text-left">
+                                <Menu as="div" className="relative inline-block lg:w-48 w-60 text-left">
                                     <div>
                                         <Menu.Button className="flex w-full flex-row items-center justify-between gap-x-3 rounded-md bg-white px-2 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" >
                                             <p className='text-xs font-normal leading-5 py-1 drop-shadow-2xl'>Category</p>
@@ -110,7 +110,7 @@ const PageTwoHero = () => {
                             </fieldset>
                         </div>
 
-                        <div className='flex flex-row items-center bg-white text-black h-9 rounded-md px-2 w-48'>
+                        <div className='flex flex-row items-center bg-white text-black h-9 rounded-md px-2 lg:w-48 w-60'>
                             <DatePicker
                                 placeholderText='Pick up'
                                 className='border-none outline-none h-full w-full bg-transparent text-sm text-black'
