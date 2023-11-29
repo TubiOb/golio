@@ -15,10 +15,10 @@ const Testimonials = () => {
             </div>
             <h4 className='font-extrabold font-[Playfair Display] text-xl tracking-wide leading-7'> Testimonial</h4>
             <div className='flex relative lg:w-[50%] md:[75%] w-[90%] text-center leading-3 mt-2'>
-                <p className='text-xs font-normal leading-5 py-2 z-40 drop-shadow-2xl'>
+                <p className='text-xs font-normal leading-5 py-2 z-20 drop-shadow-2xl'>
                     When applied to building block a website or similar work product, a Visual Guide can be an intermediate step toward the end goal of a complete website. By creating a visual guide along the way, the designer or developer can get input from the other people involved in the website such as the customer, their manager, and other members of the team.
                 </p>
-                <img src={quote} alt="" className='absolute w-16 h-16 top-[-40] z-30 left-0 text-blue-200' />
+                <img src={quote} alt="" className='absolute w-16 h-16 top-[-40] z-10 left-0 text-blue-200' />
             </div>
             
         </div>
