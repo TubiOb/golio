@@ -6,7 +6,7 @@ import { RiFacebookFill, RiTwitterFill, RiLinkedinFill, RiInstagramFill } from "
 const Footer = () => {
   return (
     <div className='w-full flex lg:flex-row flex-col flex-wrap items-start justify-between mt-12'>
-        <div className='bg-[#FFD27A] py=5 px-7 md:w-[50%] lg:w-[50%] w-full items-center md:items-end justify-between flex flex-col'>
+        <div className='bg-[#FFD27A] py=5 px-7 md:w-full lg:w-[50%] w-full items-center md:items-end justify-between flex flex-col'>
             <div className='flex flex-col w-[95%] lg:w-[50%] lg:mr-14 lg:my-3 items-start gap-3 justify-between border-b-2 border-opacity-10 border-b-black py-7 px-2 md:py-9 md:px-3'>
                 <h4 className='font-bold text-sm lg:text-3xl tracking-normal leading-3 '>Have a project idea! Let’s work together.</h4>
                 <p className='text-xs lg:text-sm font-semibold leading-3 py-2 drop-shadow-2xl'>Nunc vel metus cursus, tempor ipsum sit amet, rutrum justo. Maecenas tincidunt imperdiet magna, et porta libero eleifend vel. </p>
@@ -18,8 +18,8 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className='bg-[#031939] py=5 px-7 md:w-[50%] lg:w-[50%] w-full items-center lg:items-start justify-between flex flex-col'>
-            <div className='flex flex-row w-[95%] lg:w-[50%] items-center lg:items-start gap-4 lg:gap-3 justify-between lg:ml-14 lg:my-3 py-9 px-2'>
+        <div className='bg-[#031939] py=5 px-7 md:w-full lg:w-[50%] w-full items-center lg:items-start justify-between flex flex-col'>
+            <div className='flex flex-row w-[95%] md:w-[85%] lg:w-[50%] items-center lg:items-start gap-4 lg:gap-3 justify-between lg:ml-14 lg:my-3 py-9 px-2'>
                 <div className='w-16 h-6 cursor-pointer flex flex-row'>
                     <Link to='/' className='w-full h-full cursor-pointer text-white gap-3 flex flex-row items-center justify-between'>
                         <img src={logo} alt="Golio" className='w-full h-full' />
@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col border-y-2 border-opacity-10 border-white lg:flex-row w-[95%] lg:w-[65%] items-center lg:items-start gap-4 lg:gap-3 justify-between lg:ml-14 lg:my-3 py-9 px-2'>
+            <div className='flex flex-col border-y-2 border-opacity-10 border-white lg:flex-row w-[95%] md:w[85%] lg:w-[65%] items-start gap-4 lg:gap-3 justify-between lg:ml-14 lg:my-3 py-9 px-2'>
                 <div className='flex items-start'>
                     <ul className='flex-col items-start justify-between text-white p-3 text-base font-semibold uppercase leading-9'>quick links
                         <li className='capitalize text-neutral-200 font-medium text-sm cursor-pointer hover:text-neutral-200 hover:font-normal'>- portfolio</li>
@@ -73,6 +73,10 @@ const Footer = () => {
                         <li className='capitalize text-neutral-100 leading-6 font-light cursor-pointer hover:text-neutral-200 hover:font-normal text-sm'>Themeforest</li>
                     </ul>
                 </div>
+            </div>
+
+            <div className='flex items-center lg:ml-20 w-[95%] md:w-[85%] lg:w-[50%] justify-center my-3 text-white font-normal'>
+                <p>&copy; 2021 - Golio UI Kit</p>
             </div>
         </div>
     </div>
