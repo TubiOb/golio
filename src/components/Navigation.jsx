@@ -34,7 +34,7 @@ const Navigation = () => {
 
   return (
     <div className='flex absolute items-start justify-between w-full'>
-        <div className={`bg-white cursor-pointer z-40 lg:rounded-md lg:w-[90%] right-0 md:w-[50%] w-[70%] lg:h-12 h-full mt-0 md:mt-0 lg:mt-1  m-auto lg:py-1 px-5 py-10 lg:px-2 gap-9 lg:gap-1 fixed lg:sticky lg:flex lg:flex-row justify-between md:items-center items-start lg:items-center drop-shadow-2xl shadow-2xl transition-all duration-500 ${isMenuOpen ? 'right-0' : 'right-[-100%]'}`}>
+        <div className={`bg-white cursor-pointer z-40 lg:rounded-md lg:w-[90%] right-0 md:w-[50%] w-[70%] lg:h-12 h-full mt-0 md:mt-0 lg:mt-2  m-auto lg:py-1 px-5 py-10 lg:px-2 gap-9 lg:gap-1 fixed lg:sticky lg:flex lg:flex-row justify-between md:items-center items-start lg:items-center drop-shadow-2xl shadow-2xl transition-all duration-500 ${isMenuOpen ? 'right-0' : 'right-[-100%]'}`}>
             <div className='w-16 h-6 cursor-pointer flex'>
                 <Link to='/' className='w-full h-full cursor-pointer'>
                     <img src={logo} alt="Golio" className='w-full h-full' />
