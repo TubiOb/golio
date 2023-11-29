@@ -6,6 +6,8 @@ import Operate from '../components/Operate'
 import Team from '../components/Team'
 import Testimonials from '../components/Testimonials'
 import Newsletter from '../components/Newsletter'
+import Partners from '../components/Partners'
+import Footer from '../components/Footer'
 
 const Home = () => {
 
@@ -18,6 +20,8 @@ const Home = () => {
         <Team />
         <Testimonials />
         <Newsletter />
+        <Partners />
+        <Footer />
     </div>
   )
 }
